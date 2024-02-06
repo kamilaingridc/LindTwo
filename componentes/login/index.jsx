@@ -1,13 +1,12 @@
-import { View, // importa componentes do módulo react
-    Text, 
-    StyleSheet, 
-    TextInput  // caixa de entrada
- } from "react-native";
+import { View, Text, TextInput } from "react-native";
+import styles from "./style";
 
-export default function App(){  // define função
+export default function Login(){  // define função
     return(  // inicia o retorno da função // view parecido com div
-        <View>  
-            <View></View>
+        <View style={styles.container}>  
+            <View style={styles.box}>
+                <Text style={styles.title}>Login</Text>
+            </View>
             <View></View>
             <View></View>
         </View>
