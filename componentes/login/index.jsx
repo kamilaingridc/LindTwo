@@ -29,6 +29,7 @@ export default function Login(){  // define função
                     placeholder="Password"
                     onChangeText={setPassword}
                     value={password}
+                    secureTextEntry={true}
                 >
 
                 </TextInput>
@@ -36,7 +37,13 @@ export default function Login(){  // define função
 
 
             <View style={styles.box}>
-                <TouchableOpacity style={styles.Button}>
+                <TouchableOpacity 
+                    style={styles.Button} 
+                    onPress={() => {
+                        console.log('User:', user)
+                        console.log('Password:', password)
+                    }}
+                    >
                     <Text style={{color:'#fff', fontSize:20}}> Enter</Text>
                 </TouchableOpacity>
             </View>
